@@ -177,7 +177,7 @@ export class AIService {
     query: string, 
     intent: string, 
     queryParams: any,
-    location?: { latitude: number; longitude: number }
+    _location?: { latitude: number; longitude: number }
   ) {
     const results: any = {};
     

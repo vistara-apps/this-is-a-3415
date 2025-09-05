@@ -208,8 +208,6 @@ export class LocationService {
    * Extract location from query text
    */
   static extractLocationFromQuery(query: string): string | null {
-    const lowerQuery = query.toLowerCase();
-    
     // Common location patterns
     const locationPatterns = [
       /near me/i,

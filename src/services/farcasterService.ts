@@ -203,7 +203,7 @@ export class FarcasterService {
     }
   }
 
-  private static createProviderSearchFrame(user: FarcasterUser | null): string {
+  private static createProviderSearchFrame(_user: FarcasterUser | null): string {
     const metadata = this.generateFrameMetadata({
       title: 'Healthcare Providers',
       image: `${this.FRAME_BASE_URL}/api/frame/providers`,
@@ -228,7 +228,7 @@ export class FarcasterService {
     `;
   }
 
-  private static createAidProgramsFrame(user: FarcasterUser | null): string {
+  private static createAidProgramsFrame(_user: FarcasterUser | null): string {
     const metadata = this.generateFrameMetadata({
       title: 'Aid Programs',
       image: `${this.FRAME_BASE_URL}/api/frame/aid`,
@@ -253,7 +253,7 @@ export class FarcasterService {
     `;
   }
 
-  private static createResourcesFrame(user: FarcasterUser | null): string {
+  private static createResourcesFrame(_user: FarcasterUser | null): string {
     const metadata = this.generateFrameMetadata({
       title: 'Community Resources',
       image: `${this.FRAME_BASE_URL}/api/frame/resources`,
@@ -278,7 +278,7 @@ export class FarcasterService {
     `;
   }
 
-  private static createAIInputFrame(user: FarcasterUser | null): string {
+  private static createAIInputFrame(_user: FarcasterUser | null): string {
     const metadata = this.generateFrameMetadata({
       title: 'Ask HealthNavi AI',
       image: `${this.FRAME_BASE_URL}/api/frame/ai-input`,
@@ -301,7 +301,7 @@ export class FarcasterService {
     `;
   }
 
-  private static async createAIResponseFrame(query: string, user: FarcasterUser | null): Promise<string> {
+  private static async createAIResponseFrame(query: string, _user: FarcasterUser | null): Promise<string> {
     // This would integrate with the AI service
     const response = `I can help you with: "${query}". Visit HealthNavi for detailed assistance!`;
     
